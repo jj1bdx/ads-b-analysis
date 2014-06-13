@@ -25,7 +25,7 @@ receiver.
 
 ## License
 
-* Public domain aka CC0.
+[Public domain aka CC0](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Author
 
