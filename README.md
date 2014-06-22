@@ -12,6 +12,7 @@ receiver.
 * `ads-b-log-example.txt`: output example from ads-b-log.sh
 * `convdist.py`: analyze the data in the output format from stdin, output to stdout, converted to distance (in nautical miles) and azimuth (in degrees)
 * `convdxdy.py`: analyze the data in the output format from stdin, output to stdout, converted to dx (distance of X axis, West-to-East) and dy (distance of Y axis, South-to-North) (distance in nautical miles)
+* `plotdxdy.R`: plot the data into a PNG file with R ggplot2 library
 
 ## ADS-B message format reference
 
