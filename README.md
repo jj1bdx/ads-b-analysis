@@ -28,16 +28,16 @@ receiver.
 
 ## Caveats
 
-* Conversion is slow (in Python, after all)
-* Do not transfer the raw BaseStation format data to the host analyzing the data via TCP in real-time. The rate of packets is high (>20 lines/sec) and may consume the considerable amount of bandwidth and CPU power of the recipient side. 
-* Computationally low load filtering (e.g., format conversion, choosing items, etc.) should be performed on the Ras Pi.
+* Conversion is slow (it's in Python, after all); run the conversion program on a fast machine.
+* Do not transfer the raw BaseStation format data to the host analyzing the data via TCP in real-time. The rate of packets is high (>20 lines/sec), and the packets may consume a considerable amount of bandwidth and CPU power (~ full 1 core of Core i7) of the recipient side.
+* Computationally lightweight load filtering (e.g., format conversion, choosing items, etc.) should be performed on the Ras Pi.
 
 ## Signal receiving tips
 
 * Use the receiver protection and filterting on R820T SDR with:
     * 1/4-wavelength short stub filter for 1090MHz (which may effectively reduce cell phone airwaves around 2.18GHz)
     * Ferrite cores to the power and signal cables from Ras Pi to the R820T
-* Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will do very well)
+* Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will work very well)
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
 
 ## License
