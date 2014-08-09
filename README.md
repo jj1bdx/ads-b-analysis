@@ -38,6 +38,7 @@ receiver.
     * 1/4-wavelength short stub filter for 1090MHz (which may effectively reduce cell phone airwaves around 2.18GHz)
     * Ferrite cores to the power and signal cables from Ras Pi to the R820T
 * Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will work very well)
+* The ground height matters; the propagation of line-of-sight path works best.
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
 
 ## License
