@@ -40,6 +40,7 @@ receiver.
 * Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will work very well)
 * The ground height matters; the propagation of line-of-sight path works best.
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
+* Update Raspbian distribution as necessary (security fix, etc.)
 
 ## License
 
