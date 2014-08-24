@@ -10,6 +10,7 @@ receiver.
 
 * `ads-b-log.sh`: analysis script running on the receiver (Raspberry Pi, etc.)
 * `ads-b-log-example.txt`: output example from ads-b-log.sh
+* `antenna-design-20140615.jpg`: antenna design memorandum
 * `convdist.py`: analyze the data in the output format from stdin, output to stdout, converted to distance (in nautical miles) and azimuth (in degrees)
 * `convdxdy.py`: analyze the data in the output format from stdin, output to stdout, converted to dx (distance of X axis, West-to-East) and dy (distance of Y axis, South-to-North) (distance in nautical miles)
 * `plotdxdy.R`: plot the data into a PNG file with R ggplot2 library
@@ -37,6 +38,7 @@ receiver.
 * Use the receiver protection and filterting on R820T SDR with:
     * 1/4-wavelength short stub filter for 1090MHz (which may effectively reduce cell phone airwaves around 2.18GHz)
     * Ferrite cores to the power and signal cables from Ras Pi to the R820T
+    * Do not expose the receiving antenna close to the transmission antenna; if you have to do so, measure how the transmission affects the overall performance. In my case, 18.1MHz and 21MHz fed with 50W of power to the inverted vee antenna 1m above didn't affect the performance much. On the other hand, 28MHz 50W killed the R820T.
 * Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will work very well)
 * The ground height matters; the propagation of line-of-sight path works best.
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
