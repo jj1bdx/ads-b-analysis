@@ -38,7 +38,7 @@ receiver.
 * Use the receiver protection and filterting on R820T SDR with:
     * 1/4-wavelength short stub filter for 1090MHz (which may effectively reduce cell phone airwaves around 2.18GHz)
     * Ferrite cores to the power and signal cables from Ras Pi to the R820T
-    * Do not expose the receiving antenna close to the transmission antenna; if you have to do so, measure how the transmission affects the overall performance. In my case, 18.1MHz and 21MHz fed with 50W of power to the inverted vee antenna 1m above didn't affect the performance much. You need to experiment to determine the reception performance impact by the transmission.
+    * Do not expose the receiving antenna close to the transmission antenna; if you have to do so, measure how the transmission affects the overall performance. In my case, 18.1MHz and 21MHz fed with 50W of power to the inverted vee antenna 1m above didn't affect the performance much. You need to experiment to determine the reception performance impact by the transmission. (Note: the HF antenna near the ADS-B antenna will soon be removed.)
 * Always try to use a better antenna system, with a simple antenna erected highest as possible (a sleeve dipole or a ground plane will work very well)
 * The ground height matters; the propagation of line-of-sight path works best.
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
