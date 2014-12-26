@@ -6,6 +6,10 @@ This repository contains a set of script to analyze the BaseStation format data
 obtained from [dump1090](https://github.com/MalcolmRobb/dump1090) ADS-B
 receiver.
 
+This script is also applicable for the BaseStation format data obtainable from
+[Radarcape](http://shop.jetvision.de/epages/64807909.sf/en_GB/?ViewObjectPath=%2FShops%2F64807909%2FCategories%2FRadarcape) and [FlightRadar24 FR24 Box
+receiver](http://www.flightradar24.com/free-ads-b-equipment/).
+
 ## Files
 
 * `ads-b-log.sh`: analysis script running on the receiver (Raspberry Pi, etc.)
