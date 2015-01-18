@@ -48,6 +48,7 @@ receiver](http://www.flightradar24.com/free-ads-b-equipment/).
 * The ground height matters; the propagation of line-of-sight path works best.
 * Use [daemontools](http://cr.yp.to/daemontools.html) for stable continuous operation
 * Update Raspbian distribution as necessary (security fix especially *bash* (though Raspbian itself does not assign bash as the default shell), etc.)
+* Details on Radarcape or Flightradar24.com box can be found at [Radarcape Wiki](http://wiki.modesbeast.com/Radarcape:Contents).
 
 ## License
 
